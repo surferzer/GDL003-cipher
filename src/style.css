@@ -1,0 +1,37 @@
+body{
+
+  background-image:
+    url(https://c.pxhere.com/images/dd/ed/de96b138de711abfc9514285e198-1444851.jpg!d)
+}
+
+.rojo{
+width: 100px;
+height: 100px;
+color:red;
+background-color: red;
+border-bottom: black;
+}
+
+.amarillo{
+width: 100px;
+height: 100px;
+color:red;
+background-color: yellow;
+border-bottom: black;
+}
+
+.azul{
+width: 100px;
+height: 100px;
+color:red;
+background-color: blue;
+border-bottom: black;
+}
+
+.negro{
+width: 100px;
+height: 100px;
+color:red;
+background-color: black;
+border-bottom: black;
+}
