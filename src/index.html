@@ -5,10 +5,125 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root">
-      <h1>hola mundo!</h1>
+    <div id= "pagina1">
+      <center><h1>CODIFICADOR Hospital Angeles del Carmen</h1></center>
+      <br>
+      <br>
+
+      <!--Mensaje para codificar-->
+          <div id= "mensajePrincipal">
+          <h2>Mensaje:</h2>
+            <br>
+            <br>
+            <form id= "introduceMensaje"> <center>
+    <input type="text" id="msj" placeholder="Escribe tu mensaje para codificar">
+              </form>
+              </div>
+              <br>
+
+       <!--boton CODIFICAR-->
+              <div id= "boton">
+              <center><input type="button" onclick="codificar();" id="botonCOdificar" value="CODIFICAR">
+    </center>
+              </div>
+              </div>
+          <br>
+          <br>
+
+
+          <!--Pagina 2, titulo mensaje codificado-->
+
+          <div id= "pagina2">
+
+               <div id= "mensajeCodificado">
+          <aside id= "mensajeCodificadoInterno">
+               <strong><h1><center>Mensaje Codificado:</center></h1></strong>
+        <br>
+        <br>
+        <br>
+
+        <!--Mostrar mensaje codificado-->
+
+
+
+        </aside>
+      </div>
+
+    <!--Titulo Color del Codigo de Emergencia-->
+    <div id= "tituloColor">
+    <h2>Color del Código de Emergencia:</h2>
     </div>
+    <br>
+    <br>
+
+    <!-- inputs de colores a elegir-->
+    <strong>
+    <input type="radio" id="rojo" name=  value="rojo"> ROJO
+    <br>
+    <input type="radio" id="amarillo" name=  value="amarillo"> AMARILLO
+    <br>
+    <input type="radio" id="azul" name=  value="azul"> AZUL
+    <br>
+    <input type="radio" id="negro" name=  value="negro"> NEGRO
+    <br>
+    </strong>
+        <br>
+    <br>
+
+<!--intento de hacer botones de color-->
+<form>
+<button id= "botonRojo" class= "rojo" onclick="pantallaRoja()"/>
+<button id= "botonAmarillo" class= "amarillo" onclick="pantallaAmarilla()"/>
+<button id= "botonAzul" class= "azul" onclick="pantallaAzul()"/>
+<button id= "botonNegro" class= "negro" onclick="pantallaNegra()"/>
+
+
+</form>
+
+
+
+</div>
+</div>
+
+
+    <!--Pagina 3, Mensaje codificado con fondo del color seleccionado-->
+
+    <div id= "pagina3">
+
+
+
+      <!--boton enviar-->
+
+    <div id= "botonEnviar">
+              <center><input type="button" onclick="enviar();" id="botonEnviar" value="Enviar">
+    </center>
+              </div>
+          <br>
+
+      <!--boton volver al inicio-->
+
+      <div id= "inicio">
+              <center><input type="button" onclick="inicio();" id="botonInicio" value="Inicio">
+    </center>
+              </div>
+          <br>
+          <br>
+    <br>
+          <br>
+
+
+      <!--boton decodificar-->
+
+    <div id= "botonDecodificar">
+              <center><input type="button" onclick="decodificar();" id="botonDecodificar" value="Decodificar">
+    </center>
+              </div>
+          <br>
+          <br>
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
