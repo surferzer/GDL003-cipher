@@ -7,7 +7,9 @@
   </head>
 
   <body>
-    <div id= "pagina1">
+
+    <div id= "pagina1" style="display:block">
+
       <center><h1>CODIFICADOR Hospital Angeles del Carmen</h1></center>
       <br>
       <br>
@@ -18,14 +20,15 @@
             <br>
             <br>
             <form id= "introduceMensaje"> <center>
-    <input type="text" id="msj" placeholder="Escribe tu mensaje para codificar">
-              </form>
+    <textarea type="text" rows="10" cols="100" border-style="dotted" border-color="red" id="msj" placeholder="Escribe tu mensaje para codificar">
+    </textarea>
+  </form>
               </div>
               <br>
 
        <!--boton CODIFICAR-->
-              <div id= "boton">
-              <center><input type="button" onclick="codificar();" id="botonCOdificar" value="CODIFICAR">
+              <div id= "botonCodificar">
+              <center><input type="button" id="botonCOdificar" value="CODIFICAR">
     </center>
               </div>
               </div>
@@ -35,7 +38,7 @@
 
           <!--Pagina 2, titulo mensaje codificado-->
 
-          <div id= "pagina2">
+          <div id= "pagina2" style="display:none">
 
                <div id= "mensajeCodificado">
           <aside id= "mensajeCodificadoInterno">
@@ -45,8 +48,6 @@
         <br>
 
         <!--Mostrar mensaje codificado-->
-
-
 
         </aside>
       </div>
@@ -58,39 +59,22 @@
     <br>
     <br>
 
-    <!-- inputs de colores a elegir-->
-    <strong>
-    <input type="radio" id="rojo" name=  value="rojo"> ROJO
-    <br>
-    <input type="radio" id="amarillo" name=  value="amarillo"> AMARILLO
-    <br>
-    <input type="radio" id="azul" name=  value="azul"> AZUL
-    <br>
-    <input type="radio" id="negro" name=  value="negro"> NEGRO
-    <br>
-    </strong>
-        <br>
-    <br>
-
-<!--intento de hacer botones de color-->
+<!--botones de color-->
 <form>
+<center>
 <button id= "botonRojo" class= "rojo" onclick="pantallaRoja()"/>
 <button id= "botonAmarillo" class= "amarillo" onclick="pantallaAmarilla()"/>
 <button id= "botonAzul" class= "azul" onclick="pantallaAzul()"/>
 <button id= "botonNegro" class= "negro" onclick="pantallaNegra()"/>
-
-
+</center>
 </form>
 
-
-
-</div>
 </div>
 
 
     <!--Pagina 3, Mensaje codificado con fondo del color seleccionado-->
 
-    <div id= "pagina3">
+    <div id= "pagina3" style="display:none">
 
 
 
@@ -120,6 +104,7 @@
               <center><input type="button" onclick="decodificar();" id="botonDecodificar" value="Decodificar">
     </center>
               </div>
+            </div>
           <br>
           <br>
 

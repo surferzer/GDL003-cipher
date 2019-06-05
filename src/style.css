@@ -1,8 +1,10 @@
 body{
 
   background-image:
-    url(https://c.pxhere.com/images/dd/ed/de96b138de711abfc9514285e198-1444851.jpg!d)
+    url(https://c.pxhere.com/images/dd/ed/de96b138de711abfc9514285e198-1444851.jpg!d);
+    background-size:cover;
 }
+
 
 .rojo{
 width: 100px;
