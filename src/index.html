@@ -40,17 +40,7 @@
 
           <div id= "pagina2" style="display:none">
 
-               <div id= "mensajeCodificado">
-          <aside id= "mensajeCodificadoInterno">
-               <strong><h1><center>Mensaje Codificado:</center></h1></strong>
-        <br>
-        <br>
-        <br>
 
-        <!--Mostrar mensaje codificado-->
-
-        </aside>
-      </div>
 
     <!--Titulo Color del Codigo de Emergencia-->
     <div id= "tituloColor">
@@ -62,10 +52,10 @@
 <!--botones de color-->
 <form>
 <center>
-<button id= "botonRojo" class= "rojo" onclick="pantallaRoja()"/>
-<button id= "botonAmarillo" class= "amarillo" onclick="pantallaAmarilla()"/>
-<button id= "botonAzul" class= "azul" onclick="pantallaAzul()"/>
-<button id= "botonNegro" class= "negro" onclick="pantallaNegra()"/>
+<button id= "botonRojo" class= "rojo"/>
+<button id= "botonAmarillo" class= "amarillo"/>
+<button id= "botonAzul" class= "azul"/>
+<button id= "botonNegro" class= "negro"/>
 </center>
 </form>
 
@@ -76,12 +66,19 @@
 
     <div id= "pagina3" style="display:none">
 
-
+      <div id= "mensajeCodificado">
+   <aside id= "mensajeCodificadoInterno">
+      <strong><h1><center>Mensaje Codificado:</center></h1></strong>
+   <br>
+   <br>
+   <br>
+   </aside>
+   </div>
 
       <!--boton enviar-->
 
     <div id= "botonEnviar">
-              <center><input type="button" onclick="enviar();" id="botonEnviar" value="Enviar">
+              <center><input type="button" id="botonEnviar" value="Enviar">
     </center>
               </div>
           <br>
@@ -89,7 +86,7 @@
       <!--boton volver al inicio-->
 
       <div id= "inicio">
-              <center><input type="button" onclick="inicio();" id="botonInicio" value="Inicio">
+              <center><input type="button" id="botonInicio" value="Inicio">
     </center>
               </div>
           <br>
@@ -101,7 +98,7 @@
       <!--boton decodificar-->
 
     <div id= "botonDecodificar">
-              <center><input type="button" onclick="decodificar();" id="botonDecodificar" value="Decodificar">
+              <center><input type="button" id="botonDecodificar" value="Decodificar">
     </center>
               </div>
             </div>
