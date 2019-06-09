@@ -6,41 +6,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+
+    <body>
 
     <div id= "pagina1" style="display:block">
 
-      <center><h1>CODIFICADOR Hospital Angeles del Carmen</h1></center>
-      <br>
-      <br>
+    <center><h1>CODIFICADOR Hospital Angeles del Carmen</h1></center>
+    <br>
+    <br>
 
       <!--Mensaje para codificar-->
-          <div id= "mensajePrincipal">
-          <h2>Mensaje:</h2>
-            <br>
-            <br>
-            <form id= "introduceMensaje"> <center>
-    <textarea type="text" rows="10" cols="100" border-style="dotted" border-color="red" id="msj" placeholder="Escribe tu mensaje para codificar">
+    <div id= "mensajePrincipal">
+    <h2>Mensaje:</h2>
+    <br>
+    <br>
+    <form id= "introduceMensaje"> <center>
+    <textarea id="texto" type="text" rows="10" cols="100" placeholder="Escribe tu mensaje aquí puñetas:)" border-style="dotted" border-color="red" id="msj" placeholder="Escribe tu mensaje para codificar">
     </textarea>
-  </form>
-              </div>
-              <br>
+    </form>
+    </div>
+    <br>
 
-       <!--boton CODIFICAR-->
-              <div id= "botonCodificar">
-              <center><input type="button" id="botonCOdificar" value="CODIFICAR">
+   <!--boton CODIFICAR-->
+    <div id= "botonCodificar">
+    <center><input type="button" id="botonCodificar" value="CODIFICAR">
     </center>
-              </div>
-              </div>
-          <br>
-          <br>
+    </div>
+    </div>
+    <br>
+    <br>
 
 
-          <!--Pagina 2, titulo mensaje codificado-->
+    <!--Pagina 2, titulo mensaje codificado-->
 
-          <div id= "pagina2" style="display:none">
-
-
+    <div id= "pagina2" style="display:none">
 
     <!--Titulo Color del Codigo de Emergencia-->
     <div id= "tituloColor">
@@ -58,22 +57,23 @@
 <button id= "botonNegro" class= "negro"/>
 </center>
 </form>
-
 </div>
 
 
     <!--Pagina 3, Mensaje codificado con fondo del color seleccionado-->
 
-    <div id= "pagina3" style="display:none">
+  <div id= "pagina3" style="display:none">
 
-      <div id= "mensajeCodificado">
-   <aside id= "mensajeCodificadoInterno">
-      <strong><h1><center>Mensaje Codificado:</center></h1></strong>
-   <br>
-   <br>
-   <br>
-   </aside>
-   </div>
+  <div id= "mensajeCodificado">
+  <aside id= "mensajeCodificadoInterno">
+  <strong><h1><center>Mensaje Codificado:</center></h1></strong>
+  <textarea id="mensajePrincipal1" type="text" rows="10" cols="100"border-style="dotted" border-color="red">
+  </textarea>
+  <br>
+  <br>
+  <br>
+  </aside>
+  </div>
 
       <!--boton enviar-->
 
@@ -88,11 +88,11 @@
       <div id= "inicio">
               <center><input type="button" id="botonInicio" value="Inicio">
     </center>
-              </div>
-          <br>
-          <br>
+    </div>
     <br>
-          <br>
+    <br>
+    <br>
+    <br>
 
 
       <!--boton decodificar-->
