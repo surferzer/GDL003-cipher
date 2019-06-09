@@ -4,7 +4,7 @@ let mensajePrincipal=document.getElementById("mensajePrincipal");
 let introduceMensaje=document.getElementById("introduceMensaje");
 let mensajeCodificadoInterno=document.getElementById("mensajeCodificadoInterno");
 let textoVar=document.getElementById("texto");
-let mensajeCodificado=document.getElementById("mensajeCodificado");
+let mensajeCodificadoR=document.getElementById("mensajeCodificado");
 
 //DECLARAR BOTON CODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
@@ -33,8 +33,8 @@ function showPantalla3R(event){
   pagina1.style.display="none";
   pagina2.style.display="none";
   pagina3.style.display="block";
+  encode();
   document.querySelector("body").style.background = "red";
-  document.getElementById("mensajePrincipal1").value=textoVar.value;
 }
 
 function showPantalla3A(event){
@@ -67,6 +67,7 @@ function showPantalla3N(event){
 //FUNCION DE LOS BOTONES DE COLORES
 botonRojo.addEventListener("click", showPantalla3R);
 
+
 botonAmarillo.addEventListener("click", showPantalla3A);
 
 botonAzul.addEventListener("click", showPantalla3Az);
@@ -76,7 +77,7 @@ botonNegro.addEventListener("click", showPantalla3N);
 
 //FUNCION CODIFICAR
 function encode(){
-  let mensaje= getElementById("textoVar").value;
+  let mensaje= document.getElementById("texto").value;
   let arreglo= [];
   let y= 10;
 
@@ -123,10 +124,10 @@ arreglo.push(String.fromCharCode(aski));
 
   let aski=(mensaje.charCodeAt(i)-97+y)%26+97;
   arreglo.push(String.fromCharCode(aski));
+
 }
+
+let mensajeCodificadoR= arreglo.join(""); console.log(mensajeCodificadoR);
+document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
 }
-
-let mensajeCodificado= arreglo.join("");
-
-
 }
