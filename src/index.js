@@ -4,10 +4,12 @@ let mensajePrincipal=document.getElementById("mensajePrincipal");
 let introduceMensaje=document.getElementById("introduceMensaje");
 let mensajeCodificadoInterno=document.getElementById("mensajeCodificadoInterno");
 let textoVar=document.getElementById("texto");
-let mensajeCodificadoR=document.getElementById("mensajeCodificado");
+let mensajeCodificadoR=document.getElementById("mensajeCodificadoR");
+
 
 //DECLARAR BOTON CODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
+let botonDecodificar=document.getElementById("botonDecodificar");
 
 
 //CAMBIO DE PANTALLA AL CLICK EN BOTON CODIFICAR
@@ -16,10 +18,12 @@ botonCodificar.addEventListener("click",function(){
   pagina1.style.display="none";
   });
 
+
 //DECLARAR PANTALLAS
 let pagina1=document.getElementById("pagina1");
 let pagina2=document.getElementById("pagina2");
 let pagina3=document.getElementById("pagina3");
+
 
 //DECLARAR LOS BOTONES DE COLORES
 let botonRojo=document.getElementById("botonRojo");
@@ -42,18 +46,18 @@ function showPantalla3A(event){
   pagina1.style.display="none";
   pagina2.style.display="none";
   pagina3.style.display="block";
+  encode();
   document.querySelector("body").style.background = "yellow";
-  document.getElementById("mensajePrincipal1").value=textoVar.value;
-}
+  }
 
 function showPantalla3Az(event){
   event.preventDefault();
   pagina1.style.display="none";
   pagina2.style.display="none";
   pagina3.style.display="block";
+  encode();
   document.querySelector("body").style.background = "blue";
-  document.getElementById("mensajePrincipal1").value=textoVar.value;
-}
+  }
 
 function showPantalla3N(event){
   event.preventDefault();
@@ -61,18 +65,21 @@ function showPantalla3N(event){
   pagina2.style.display="none";
   pagina3.style.display="block";
   document.querySelector("body").style.background = "black";
-  document.getElementById("mensajePrincipal1").value=textoVar.value;
+  encode();
 }
 
 //FUNCION DE LOS BOTONES DE COLORES
 botonRojo.addEventListener("click", showPantalla3R);
-
 
 botonAmarillo.addEventListener("click", showPantalla3A);
 
 botonAzul.addEventListener("click", showPantalla3Az);
 
 botonNegro.addEventListener("click", showPantalla3N);
+
+botonDecodificar.addEventListener("click", decodificarMensaje);
+
+
 
 
 //FUNCION CODIFICAR
@@ -129,5 +136,64 @@ arreglo.push(String.fromCharCode(aski));
 
 let mensajeCodificadoR= arreglo.join(""); console.log(mensajeCodificadoR);
 document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
+}
+}
+
+
+//FUNCION DECODIFICAR
+
+function decodificarMensaje(){
+let mc=document.getElementById("mensajePrincipal1").value;
+let arreglo2= [];
+let y= -10;
+
+  for (let j = 0; j<mc.length; j++){
+
+  if (mc.charCodeAt(j)===32){
+  arreglo2.push(" ");
+
+}else if (mc.charCodeAt(j)===46){
+      arreglo2.push(".");
+
+  }else if(mc.charCodeAt(j)===44){
+  arreglo2.push(",");
+
+}else if(mc.charCodeAt(j)===58){
+    arreglo2.push(":");
+
+  }else if(mc.charCodeAt(j)===48){
+    arreglo2.push(0);
+
+  } else if (mc.charCodeAt(j)===49){
+    arreglo2.push(1);
+
+  } else if (mc.charCodeAt(j)===50){
+    arreglo2.push(2);
+
+  } else if (mc.charCodeAt(j)===51){
+    arreglo2.push(3);
+
+  } else if (mc.charCodeAt(j)===52){
+    arreglo2.push(4);
+
+  } else if (mc.charCodeAt(j)===53){
+    arreglo2.push(5);
+
+  }else if (mc.charCodeAt(j)<97){
+
+
+    let aski2= (mc.charCodeAt(j)-65+y)%26+65;
+    arreglo2.push(String.fromCharCode(aski2));
+    }else{
+
+
+    let aski2=(mc.charCodeAt(j)-97+y)%26+97;
+    arreglo2.push(String.fromCharCode(aski2));
+
+    }
+
+    let mensajeDecod= arreglo2.join("");
+      document.getElementById("mostrando").value=mensajeDecod;
+
 }
 }
