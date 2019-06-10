@@ -1,10 +1,6 @@
 
 //DECLARAR MENSAJE PRINCIPAL
-let mensajePrincipal=document.getElementById("mensajePrincipal");
-let introduceMensaje=document.getElementById("introduceMensaje");
-let mensajeCodificadoInterno=document.getElementById("mensajeCodificadoInterno");
-let textoVar=document.getElementById("texto");
-let mensajeCodificadoR=document.getElementById("mensajeCodificadoR");
+
 
 
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
@@ -195,7 +191,7 @@ let botonInicio=document.getElementById("botonInicio");
 
 botonInicio.addEventListener("click", limpiar);
 
-function limpiar(event){
+function limpiar(){
   pagina1.style.display="block";
   pagina2.style.display="none";
   pagina3.style.display="none";

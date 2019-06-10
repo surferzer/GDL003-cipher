@@ -5,7 +5,50 @@ body{
     background-size:cover;
 }
 
+textarea{
+ width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
 
+#botonCodificar{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#botonDecodificar{
+  border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.btn1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+}
+
+#botonEnviar{
+
+}
 .rojo{
 width: 100px;
 height: 100px;
