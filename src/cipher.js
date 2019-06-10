@@ -1,4 +1,5 @@
 window.Cipher= {
+  let cipherMesage=()=>{
   function encode(){
   let mensaje= document.getElementById("texto").value;
   let arreglo= [];
@@ -51,10 +52,10 @@ window.Cipher= {
   document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
   }
   }
-
+  }
 
   //FUNCION DECODIFICAR
-
+let cipherMesage1=()=>{
   function decodificarMensaje(){
   let mc=document.getElementById("mensajePrincipal1").value;
   let arreglo2= [];
