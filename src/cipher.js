@@ -1,9 +1,17 @@
-window.Cipher= {
-  let cipherMesage=()=>{
-  function encode(){
+//window.Laboratoria = {
+//  cipherMessage: () => {
+//    console.log("hola")
+//  },
+//  hola: "hola",
+//  uno: 1
+//};
+
+window.cipher = {
+  encode: () => {
+  //cipherMesage: function()={
   let mensaje= document.getElementById("texto").value;
   let arreglo= [];
-  let y= 10;
+  let y= 33;
 
   for (let i = 0; i <mensaje.length; i++){
 
@@ -43,23 +51,24 @@ window.Cipher= {
   arreglo.push(String.fromCharCode(aski));
 
   }else{
-
-        let aski=(mensaje.charCodeAt(i)-97+y)%26+97;
+    let aski=(mensaje.charCodeAt(i)-97+y)%26+97;
     arreglo.push(String.fromCharCode(aski));
   }
 
-  let mensajeCodificadoR= arreglo.join(""); console.log(mensajeCodificadoR);
+  let mensajeCodificadoR= arreglo.join("");
+  console.log(mensajeCodificadoR);
   document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
   }
-  }
-  }
+  //return mensajeCodificadoR;
+},
 
   //FUNCION DECODIFICAR
-let cipherMesage1=()=>{
-  function decodificarMensaje(){
+decode: () => {
+//cipherMesaje1: function(){
+//ecode: function(){
   let mc=document.getElementById("mensajePrincipal1").value;
   let arreglo2= [];
-  let y= -10;
+  let y= -33;
 
   for (let j = 0; j<mc.length; j++){
 
@@ -96,11 +105,13 @@ let cipherMesage1=()=>{
   }else if (mc.charCodeAt(j)<97){
 
       let aski2= (mc.charCodeAt(j)-65+y)%26+65;
+      //let aski2= (mc.charCodeAt(j)+65-y)%26+65;
       arreglo2.push(String.fromCharCode(aski2));
 
       }else{
 
       let aski2=(mc.charCodeAt(j)-97+y)%26+97;
+    //  let aski2= (mc.charCodeAt(j)+97-y+14)%26+97;
       arreglo2.push(String.fromCharCode(aski2));
       }
 
@@ -108,8 +119,7 @@ let cipherMesage1=()=>{
       document.getElementById("mostrando").value=mensajeDecod;
       }
       }
-  }
-
+};
 
 //FUNCION CODIFICAR
 //function encode(){

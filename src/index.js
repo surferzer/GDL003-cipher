@@ -1,7 +1,4 @@
 
-//DECLARAR MENSAJE PRINCIPAL
-
-
 
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
@@ -34,7 +31,7 @@ event.preventDefault();
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
-encode();
+window.Cipher.encode();
 document.querySelector("body").style.background = "red";
 }
 
@@ -43,7 +40,7 @@ event.preventDefault();
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
-encode();
+window.Cipher.encode();
 document.querySelector("body").style.background = "yellow";
 }
 
@@ -52,7 +49,7 @@ event.preventDefault();
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
-encode();
+window.Cipher.encode();
 document.querySelector("body").style.background = "blue";
 }
 
@@ -62,7 +59,7 @@ pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
 document.querySelector("body").style.background = "black";
-encode();
+window.Cipher.encode();
 }
 
 //FUNCION DE LOS BOTONES DE COLORES
@@ -74,7 +71,7 @@ botonAzul.addEventListener("click", showPantalla3Az);
 
 botonNegro.addEventListener("click", showPantalla3N);
 
-botonDecodificar.addEventListener("click", decodificarMensaje);
+botonDecodificar.addEventListener("click", window.Cipher.decode());   //("click", decodificarMensaje());
 
 //FUNCION CODIFICAR
 //function encode(){
@@ -197,3 +194,6 @@ function limpiar(){
   pagina3.style.display="none";
   document.getElementById("texto").value = "";
   }
+
+window.Cipher.encode();
+window.Cipher.decode();
