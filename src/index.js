@@ -1,8 +1,12 @@
 
 
+let mensaje= document.getElementById("texto").value;
+let mc=document.getElementById("mensajePrincipal1").value;
+let y= 33;
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
 let botonDecodificar=document.getElementById("botonDecodificar");
+
 
 
 //CAMBIO DE PANTALLA AL CLICK EN BOTON CODIFICAR
@@ -31,8 +35,9 @@ event.preventDefault();
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
-window.Cipher.encode();
 document.querySelector("body").style.background = "red";
+window.cipher.encode(y, mensaje);
+
 }
 
 function showPantalla3A(event){
@@ -40,8 +45,9 @@ event.preventDefault();
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
-window.Cipher.encode();
 document.querySelector("body").style.background = "yellow";
+window.cipher.encode(y, mensaje);
+
 }
 
 function showPantalla3Az(event){
@@ -49,8 +55,9 @@ event.preventDefault();
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
-window.Cipher.encode();
 document.querySelector("body").style.background = "blue";
+window.Cipher.encode(y, mensaje);
+
 }
 
 function showPantalla3N(event){
@@ -59,7 +66,7 @@ pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
 document.querySelector("body").style.background = "black";
-window.Cipher.encode();
+window.cipher.encode(y, mensaje);
 }
 
 //FUNCION DE LOS BOTONES DE COLORES
@@ -71,8 +78,13 @@ botonAzul.addEventListener("click", showPantalla3Az);
 
 botonNegro.addEventListener("click", showPantalla3N);
 
-botonDecodificar.addEventListener("click", window.Cipher.decode());   //("click", decodificarMensaje());
+botonDecodificar.addEventListener("click", window.cipher.decode(y, mc));   //("click", decodificarMensaje());
 
+
+
+
+
+//let y= -33;
 //FUNCION CODIFICAR
 //function encode(){
 //let mensaje= document.getElementById("texto").value;
@@ -195,5 +207,5 @@ function limpiar(){
   document.getElementById("texto").value = "";
   }
 
-window.Cipher.encode();
-window.Cipher.decode();
+window.cipher.encode(y, mensaje);
+window.cipher.decode(y, mc);

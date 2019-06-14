@@ -7,13 +7,11 @@
 //};
 
 window.cipher = {
-  encode: () => {
-  //cipherMesage: function()={
-  let mensaje= document.getElementById("texto").value;
-  let arreglo= [];
-  let y= 33;
+  encode: (y, mensaje) => {
 
-  for (let i = 0; i <mensaje.length; i++){
+  let arreglo= [];
+
+  for (let i = 0; i < mensaje.length; i++){
 
   if (mensaje.charCodeAt(i)===32){
     arreglo.push(" ");
@@ -59,17 +57,15 @@ window.cipher = {
   console.log(mensajeCodificadoR);
   document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
   }
-  //return mensajeCodificadoR;
+  return mensajeCodificadoR;
 },
 
   //FUNCION DECODIFICAR
-decode: () => {
+decode: (y, mc) => {
 //cipherMesaje1: function(){
 //ecode: function(){
-  let mc=document.getElementById("mensajePrincipal1").value;
-  let arreglo2= [];
-  let y= -33;
 
+  let arreglo2= [];
   for (let j = 0; j<mc.length; j++){
 
   if (mc.charCodeAt(j)===32){
@@ -118,8 +114,9 @@ decode: () => {
       let mensajeDecod= arreglo2.join("");
       document.getElementById("mostrando").value=mensajeDecod;
       }
-      }
-};
+     }
+     return mensajeDecod;
+     };
 
 //FUNCION CODIFICAR
 //function encode(){
