@@ -3,6 +3,8 @@
 let mensaje= document.getElementById("texto").value;
 let mc=document.getElementById("mensajePrincipal1").value;
 let y= 33;
+let mensajeCodificadoR=document.getElementById("mensajePrincipal1")
+let mensajeDecod=document.getElementById("mostrando")
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
 let botonDecodificar=document.getElementById("botonDecodificar");
@@ -56,7 +58,7 @@ pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
 document.querySelector("body").style.background = "blue";
-window.Cipher.encode(y, mensaje);
+window.cipher.encode(y, mensaje);
 
 }
 

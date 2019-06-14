@@ -114,9 +114,10 @@ decode: (y, mc) => {
       let mensajeDecod= arreglo2.join("");
       document.getElementById("mostrando").value=mensajeDecod;
       }
-     }
-     return mensajeDecod;
-     };
+      return mensajeDecod;
+      }
+
+      };
 
 //FUNCION CODIFICAR
 //function encode(){
