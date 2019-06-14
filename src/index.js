@@ -2,9 +2,9 @@
 
 let mensaje= document.getElementById("texto").value;
 let mc=document.getElementById("mensajePrincipal1").value;
-let y= 33;
-let mensajeCodificadoR=document.getElementById("mensajePrincipal1")
-let mensajeDecod=document.getElementById("mostrando")
+let y= 2;
+let mensajeCodificadoR=document.getElementById("mensajePrincipal1");
+let mensajeDecod=document.getElementById("mostrando");
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
 let botonDecodificar=document.getElementById("botonDecodificar");

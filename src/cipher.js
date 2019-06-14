@@ -100,13 +100,13 @@ decode: (y, mc) => {
 
   }else if (mc.charCodeAt(j)<97){
 
-      let aski2= (mc.charCodeAt(j)+65-y)%26+65;
+      let aski2= (mc.charCodeAt(j)-65-y)%26+65;
       //let aski2= (mc.charCodeAt(j)+65-y)%26+65;
       arreglo2.push(String.fromCharCode(aski2));
 
       }else{
 
-      let aski2=(mc.charCodeAt(j)+97-y)%26+97;
+      let aski2=(mc.charCodeAt(j)-97-y)%26+97;
     //  let aski2= (mc.charCodeAt(j)+97-y+14)%26+97;
       arreglo2.push(String.fromCharCode(aski2));
       }
