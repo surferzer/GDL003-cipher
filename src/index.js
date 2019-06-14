@@ -71,6 +71,16 @@ document.querySelector("body").style.background = "black";
 window.cipher.encode(y, mensaje);
 }
 
+function showDecod(event){
+  pagina1.style.display="none";
+  pagina2.style.display="none";
+  pagina3.style.display="block";
+  window.cipher.decode(y, mc);
+
+
+
+}
+
 //FUNCION DE LOS BOTONES DE COLORES
 botonRojo.addEventListener("click", showPantalla3R);
 
@@ -80,7 +90,7 @@ botonAzul.addEventListener("click", showPantalla3Az);
 
 botonNegro.addEventListener("click", showPantalla3N);
 
-botonDecodificar.addEventListener("click", window.cipher.decode(y, mc));   //("click", decodificarMensaje());
+botonDecodificar.addEventListener("click", showDecod);   //("click", decodificarMensaje());
 
 
 

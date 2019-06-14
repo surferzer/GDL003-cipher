@@ -112,16 +112,16 @@ decode: (y, mc) => {
       }
 
       let mensajeDecod= arreglo2.join("");
+      console.log(mensajeDecod);
       document.getElementById("mostrando").value=mensajeDecod;
       }
       return mensajeDecod;
       }
-
       };
 
 //FUNCION CODIFICAR
 //function encode(){
-//let mensaje= document.getElementById("texto").value;
+//let mensaje= document.getElemen"tById("texto").value;
 //let arreglo= [];
 //let y= 10;
 
