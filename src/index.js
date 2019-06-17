@@ -35,6 +35,7 @@ let botonNegro=document.getElementById("botonNegro");
 
 function showPantalla3R(event){
 event.preventDefault();
+let mensaje= document.getElementById("texto").value;
 pagina1.style.display="none";
 pagina2.style.display="none";
 pagina3.style.display="block";
@@ -73,10 +74,10 @@ window.cipher.encode(y, mensaje);
 
 
 function showDecod(){
-  pagina1.style.display="none";
-  pagina2.style.display="none";
-  pagina3.style.display="block";
-  window.cipher.decode(y, mc);
+pagina1.style.display="none";
+pagina2.style.display="none";
+pagina3.style.display="block";
+window.cipher.decode(y, mc);
 }
 
 
@@ -105,8 +106,8 @@ function limpiar(){
   document.getElementById("texto").value = "";
   }
 
-window.cipher.encode(y, mensaje);
-window.cipher.decode(y, mc);
+//window.cipher.encode(y, mensaje);
+//window.cipher.decode(y, mc);
 
 
 

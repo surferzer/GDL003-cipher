@@ -54,8 +54,8 @@ window.cipher = {
   }
 
   let mensajeCodificadoR= arreglo.join("");
-  console.log(mensajeCodificadoR);
-  document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
+
+  //document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
   }
   },
 
@@ -99,23 +99,24 @@ decode: (y, mc) => {
 
   }else if (mc.charCodeAt(j)<97){
 
-      let aski2= (mc.charCodeAt(j)-65-y)%26+65;
+      let aski2= (mc.charCodeAt(j)+65-y)%26+65;
       //let aski2= (mc.charCodeAt(j)+65-y)%26+65;
       arreglo2.push(String.fromCharCode(aski2));
 
       }else{
 
-      let aski2=(mc.charCodeAt(j)-97-y)%26+97;
+      let aski2=(mc.charCodeAt(j)+97-y+14)%26+97;
     //  let aski2= (mc.charCodeAt(j)+97-y+14)%26+97;
       arreglo2.push(String.fromCharCode(aski2));
       }
 
       let mensajeDecod= arreglo2.join("");
-      console.log(mensajeDecod);
       document.getElementById("mostrando").value=mensajeDecod;
       }
       }
       };
+
+
 
 //FUNCION CODIFICAR
 //function encode(){
