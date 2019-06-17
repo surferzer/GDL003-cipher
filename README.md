@@ -1,6 +1,22 @@
-# Cifrado César
+# CODIFICADOR Hospital Angeles del Carmen
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
+
+Esta aplicación está diseñada exclusivamente para los empleados del Hospital Ángeles del Carmen, la cual deberá estar instalada en todas las computadoras del edificio.
+
+El Codificador de este Hospital permite que los empleados puedan informar de manera efectiva, discreta y rápida, los acontecimientos o emergencias que ocurren sin necesidad de hablarlos enfrente de los pacientes o personas ajenas a la Institución y así, de esta manera evitar el pánico que normalmente se genera al transmitir la información de boca en boca.
+
+Cualquier empleado con acceso a alguna computadora del Hospital puede enviar un mensaje al resto del personal y áreas involucradas; este mensaje aparecerá codificado y con el color del código de emergencia que corresponda según los parámetros establecidos por el Hospital, este color se podrá elegir un paso antes de enviar el mensaje.
+El personal del Hospital, al recibir la alerta, la descifra para conocer a detalle el problema y enseguida actúa.
+
+Todo el personal está capacitado para saber la tarea de cada persona ante cualquier código de emergencia que se presente.
+
+
+
+
+
+
+
+<!--Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
 es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
 César lo usaba para enviar órdenes secretas a sus generales en los campos de
 batalla.
@@ -184,7 +200,7 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 ## Rúbrica
 
 Te aconsejamos revisar [la rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada _habilidad_ y cada _nivel_. 
+para ver la descripción detallada de cada _habilidad_ y cada _nivel_.
 
 ## Pistas sobre cómo comenzar a trabajar en el proyecto
 
@@ -276,3 +292,4 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+-->

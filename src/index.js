@@ -3,8 +3,8 @@
 let mensaje= document.getElementById("texto").value;
 let mc=document.getElementById("mensajePrincipal1").value;
 let y= 2;
-let mensajeCodificadoR=document.getElementById("mensajePrincipal1");
-let mensajeDecod=document.getElementById("mostrando");
+
+
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
 let botonCodificar=document.getElementById("botonCodificar");
 let botonDecodificar=document.getElementById("botonDecodificar");
@@ -32,6 +32,7 @@ let botonAzul=document.getElementById("botonAzul");
 let botonNegro=document.getElementById("botonNegro");
 
 
+
 function showPantalla3R(event){
 event.preventDefault();
 pagina1.style.display="none";
@@ -39,7 +40,6 @@ pagina2.style.display="none";
 pagina3.style.display="block";
 document.querySelector("body").style.background = "red";
 window.cipher.encode(y, mensaje);
-
 }
 
 function showPantalla3A(event){
@@ -71,15 +71,15 @@ document.querySelector("body").style.background = "black";
 window.cipher.encode(y, mensaje);
 }
 
-function showDecod(event){
+
+function showDecod(){
   pagina1.style.display="none";
   pagina2.style.display="none";
   pagina3.style.display="block";
   window.cipher.decode(y, mc);
-
-
-
 }
+
+
 
 //FUNCION DE LOS BOTONES DE COLORES
 botonRojo.addEventListener("click", showPantalla3R);
@@ -93,6 +93,20 @@ botonNegro.addEventListener("click", showPantalla3N);
 botonDecodificar.addEventListener("click", showDecod);   //("click", decodificarMensaje());
 
 
+//FUNCION Inicio
+let botonInicio=document.getElementById("botonInicio");
+
+botonInicio.addEventListener("click", limpiar);
+
+function limpiar(){
+  pagina1.style.display="block";
+  pagina2.style.display="none";
+  pagina3.style.display="none";
+  document.getElementById("texto").value = "";
+  }
+
+window.cipher.encode(y, mensaje);
+window.cipher.decode(y, mc);
 
 
 
@@ -205,19 +219,3 @@ botonDecodificar.addEventListener("click", showDecod);   //("click", decodificar
 //    document.getElementById("mostrando").value=mensajeDecod;
 //    }
 //    }
-
-
-//FUNCION Inicio
-let botonInicio=document.getElementById("botonInicio");
-
-botonInicio.addEventListener("click", limpiar);
-
-function limpiar(){
-  pagina1.style.display="block";
-  pagina2.style.display="none";
-  pagina3.style.display="none";
-  document.getElementById("texto").value = "";
-  }
-
-window.cipher.encode(y, mensaje);
-window.cipher.decode(y, mc);

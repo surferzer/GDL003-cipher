@@ -57,8 +57,7 @@ window.cipher = {
   console.log(mensajeCodificadoR);
   document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
   }
-  return mensajeCodificadoR;
-},
+  },
 
   //FUNCION DECODIFICAR
 decode: (y, mc) => {
@@ -115,7 +114,6 @@ decode: (y, mc) => {
       console.log(mensajeDecod);
       document.getElementById("mostrando").value=mensajeDecod;
       }
-      return mensajeDecod;
       }
       };
 
