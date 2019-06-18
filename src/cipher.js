@@ -52,11 +52,10 @@ window.cipher = {
     let aski=(mensaje.charCodeAt(i)-97+y)%26+97;
     arreglo.push(String.fromCharCode(aski));
   }
-
-  let mensajeCodificadoR= arreglo.join("");
-
-  //document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
+//document.getElementById("mensajePrincipal1").value=mensajeCodificadoR;
   }
+  console.log(arreglo.join(''));
+  return arreglo.join('');
   },
 
   //FUNCION DECODIFICAR
@@ -110,11 +109,15 @@ decode: (y, mc) => {
       arreglo2.push(String.fromCharCode(aski2));
       }
 
-      let mensajeDecod= arreglo2.join("");
-      document.getElementById("mostrando").value=mensajeDecod;
-      }
-      }
-      };
+     //let mensajeDecod= arreglo2.join("");
+     //document.getElementById("mostrando").value=mensajeDecod;
+      //return arreglo2.join("");
+    }
+    //return mensajeDecod;
+    return arreglo2.join("");
+    }
+
+    };
 
 
 

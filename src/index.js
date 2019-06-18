@@ -2,7 +2,7 @@
 
 let mensaje= document.getElementById("texto").value;
 let mc=document.getElementById("mensajePrincipal1").value;
-let y= 2;
+let y= 33;
 
 
 //DECLARAR BOTON CODIFICAR Y DECODIFICAR
@@ -79,7 +79,6 @@ pagina2.style.display="none";
 pagina3.style.display="block";
 window.cipher.decode(y, mc);
 }
-
 
 
 //FUNCION DE LOS BOTONES DE COLORES
